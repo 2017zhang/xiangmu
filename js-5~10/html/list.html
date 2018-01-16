@@ -1,0 +1,97 @@
+
+<div class="lt-tp">
+    <div class="row">
+        <div class="col-sm-4">
+            <smll class="lt-sz col-sm-5">修改时间</smll>
+            <input type="date" id="startAt" name="startAt" ng-model="startAt" class="lt-it col-sm-7">
+        </div>
+    <div class="col-sm-1 lt-core">
+        <small>————</small>
+    </div>
+    <div class="col-sm-3">
+        <input type="date" id="endAt" name="endAt" ng-model="endAt" class="lt-it col-sm-11" >
+    </div>
+    <div class="col-sm-4 ">
+        <smll class="col-sm-5 lt-sz ">类&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp型</smll>
+        <select class="col-sm-7 lt-it lt-st " ng-model="params.type">
+            <option value="" >全部</option>
+            <option value="0">首页banner</option>
+            <option value="1">找职位banner</option>
+            <option value="2">找精英banner </option>
+            <option value="3">行业大图</option>
+        </select>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <smll class="lt-sz col-sm-5">状&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp态</smll>
+            <select class="col-sm-7 lt-it lt-st" ng-model="params.status">
+                <option value="" >全部</option>
+                <option value="2">上线</option>
+                <option value="1">草稿</option>
+            </select>
+        </div>
+    </div>
+    <div class="row col-sm-offset-11 ">
+        <div class="row ">
+        <button type="button" class="btn btn-warning lt-bn" ng-click="reset()">清空</button>
+        <button type="button" class="btn btn-success lt-bn lt-ft-bn-1-1" ng-click="search()">搜索</button>
+        </div>
+    </div>
+</div>
+<div class="lt-tp lt-ft">
+    <div class="row lt-naw">
+        <p class="lt-sz lt-ft-p col-sm-2 ">Article列表</p>
+        <p class="col-sm-1 col-sm-offset-9">
+            <button type="button" ng-click="CeCk('','')" class="btn btn-success lt-bn ">+新增</button>
+        </p>
+    </div>
+    <div class="lt-td">
+    <table class="table table-hover lt-te">
+        <thead >
+        <tr>
+            <th class="lt-th">序号</th>
+            <th class="lt-th">名称</th>
+            <th class="lt-th">类型</th>
+            <th class="lt-th">发布时间</th>
+            <th class="lt-th">修改时间</th>
+            <th class="lt-th">发布者</th>
+            <th class="lt-th">状态</th>
+            <th class="lt-th">操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="x in article">
+            <td class="lt-td">{{$index+1}}</td>
+            <td class="lt-td">{{x.title}}</td>
+            <td class="lt-td">{{x.type|replacetype}}</td>
+            <td class="lt-td">{{x.createAt|date:'yyyy-MM-dd HH:mm:ss'}}</td>
+            <td class="lt-td">{{x.updateAt|date:'yyyy-MM-dd HH:mm:ss'}}</td>
+            <td class="lt-td">{{x.author}}</td>
+            <td class="lt-td">{{x.status|state}}</td>
+            <td class="row col-sm-2 lt-td">
+                <button type="button" ng-click="changeStatus(x.id,x.status)" class="col-sm-3 btn btn-warning lt-bn-ft">{{x.status|btnFilter}}</button>
+                <button type="button" ng-click="CeCk(x.id)" class="col-sm-3 btn btn-success lt-bn-ft">编辑</button>
+                <button type="button" ng-click="delete(x.id)" class="col-sm-3 btn btn-danger lt-bn-ft">删除</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+<div class="pull-right" id="lt-cr">
+    <ul class="pagination ul-page li-bn">
+        <li class="lt-em btn li-bn">每页显示<input maxlength="2" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"
+                                               class="btn li-bn li-je" ng-model="params.size">条</li>
+        <li><button class="btn btn-primary li-bn" ng-disabled="firstPage" ng-click="goPage(1)">首页</button></li>
+        <li><button class="btn btn-primary li-bn" ng-disabled="firstPage" ng-click="goPage(n-1)">上一页</button></li>
+        <li ng-repeat="x in articlePage" ><button class="btn btn-primary li-bn-pe li-bn" ng-click="goPage(x)"
+                                                  ng-class="{'bgcolor': isActivepage(x)}">{{x}}</button></li>
+        <li><button class="btn btn-primary li-bn" ng-disabled="endPage" ng-click="goPage(n+1)">下一页</button></li>
+        <li><button class="btn btn-primary li-bn" ng-disabled="endPage" ng-click="goPage(articleNum)">未页</button></li>
+        <li class="lt-em btn li-bn">共<b>{{articleNum}}</b>页</li>
+        <li class="lt-em btn li-bn" >去第<input type="text " maxlength="2" class="btn li-bn li-je" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"
+                                   ng-model="jumPage">页</li>
+        <li><button class="btn btn-primary li-bn"  ng-click="jum()">确定</button></li>
+    </ul>
+</div>
