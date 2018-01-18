@@ -1,0 +1,143 @@
+.maintop {
+  text-align: center;
+  margin: 4rem auto;
+}
+.col-xs-12 {
+  padding: 0 8px;
+}
+.maintop1 {
+  padding-right: 5%;
+  border-right: 2px dashed gray;
+}
+@media screen and (max-width: 767px) {
+  .maintop1 {
+    padding-right: 5%;
+    border-right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carousel-control {
+    top: -3%;
+    font-size: 3rem;
+  }
+}
+.maintop2 {
+  font-size: 2.5rem;
+}
+.mainyop3 {
+  font-size: 1.2rem;
+}
+.maintop-5 {
+  justify-content: space-between;
+  text-align: center;
+}
+.maintop-5-1 {
+  font-size: 0.5rem;
+  color: #29b078;
+  margin: 2% auto auto -64px;
+}
+.maintop-5-1 span {
+  position: absolute;
+  margin-top: .3%;
+}
+h3 {
+  text-align: center;
+  margin: 3rem auto;
+}
+.number {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.circle {
+  width: 100%;
+  margin: 1rem auto;
+  text-align: center;
+}
+.littlecircle {
+  display: inline-block;
+  line-height: 1rem;
+  margin-top: 10px;
+  width: 1rem;
+  height: 1rem;
+  text-align: center;
+  border-radius: 50%;
+  background-color: gray;
+}
+.littlecircle:hover {
+  background-color: #29b078;
+}
+.person {
+  background-color: #fff;
+  text-align: center;
+  padding: 5% 10%;
+  font-size: 1.2rem;
+  border: 1px solid #e8e8e8;
+}
+.round {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e8e8e8;
+  border-radius: 50%;
+  background: #fff;
+}
+.round > p {
+  font-size: 2rem;
+  color: #29b078;
+  line-height: 40px;
+}
+@media screen and (max-width: 768px) {
+  .number img {
+    width: 70%;
+    height: 70%;
+  }
+  .number .person {
+    width: 70%;
+    margin: 3rem auto;
+  }
+  .number .person img {
+    width: 80%;
+  }
+}
+.jp {
+  float: left;
+  width: 20%;
+  background: #fff;
+}
+.jp > img {
+  height: 100%;
+  width: 90%;
+}
+.mainbottom2:hover {
+  transform: translate(0, -5px);
+  box-shadow: 0 0 2px 2px orange;
+  z-index: 2;
+}
+.imgopacity {
+  opacity: 0;
+}
+.foot1-top {
+  background: #fff;
+  margin-bottom: -10px;
+}
+.foot1-top > h3 {
+  padding-top: 1rem;
+}
+.foot1 {
+  font-size: 1.2rem;
+}
+.font4 {
+  text-align: center;
+  margin: 0;
+}
+.font4 {
+  text-align: center;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .foot4 {
+    display: flex;
+    justify-content: space-between;
+  }
+}

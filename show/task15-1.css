@@ -1,0 +1,133 @@
+/**/
+html {
+  font-size: 62.5%;
+  background: #fafafa;
+  width: 100%;
+}
+body {
+  font-size: 62.5%;
+  height: 100%;
+  font-family: 宋体;
+  background: #fafafa;
+}
+.headtop {
+  font-size: 1.2rem;
+  padding: 0 10%;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tel {
+  color: #29b078;
+  line-height: 2.3rem;
+}
+.headmiddle {
+  border-radius: 0;
+  background: #29b078;
+  font-size: 1.7rem;
+  margin: 0;
+}
+.headmiddle .headmiddle1 .headmiddle2 ul a {
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .headmiddle2 {
+    text-align: center;
+    background-color: #29b078;
+  }
+}
+@media screen and (min-width: 768px) {
+  .headmiddle2 li:hover p {
+    display: block;
+  }
+  .headmiddle2 ul {
+    float: right;
+    padding-right: 5%;
+  }
+}
+.headmiddle2 li {
+  padding: 2rem 0;
+}
+.headmiddle button {
+  border: none;
+  background: none;
+}
+.headmiddle .headmiddle1 .headmiddle3 button:focus .hedmiddle .headmiddle3 button:hover {
+  background: none;
+}
+.headmiddle .headmiddle1 .headmiddle3 .icon-bar {
+  background: white;
+}
+.headmiddle2 li {
+  padding: 1rem 0;
+  position: relative;
+}
+.headmiddle2 p {
+  position: absolute;
+  bottom: -10px;
+  display: none;
+  height: 2px;
+  text-align: center;
+  width: 100%;
+  background-color: #fff;
+}
+.active img {
+  width: 100%;
+}
+.headmiddle3 {
+  padding-right: 6%;
+}
+.carousel-control {
+  padding-top: 15%;
+  line-height: 13px;
+  position: absolute;
+  text-align: center;
+  font-size: 3rem;
+}
+footer > h3 {
+  padding-top: 20px;
+}
+.foot2 {
+  display: inline-grid;
+}
+.foot2 {
+  text-align: center;
+  background-color: #29b078;
+  width: 100%;
+}
+.foot3 {
+  text-align: center;
+  background-color: #29b078;
+  width: 100%;
+}
+.foot2 {
+  border-bottom: .1rem solid white;
+}
+.foot5 {
+  margin: 1rem 0 0 0;
+  background: #29b078;
+}
+.foot-left > p {
+  margin: 3px auto 3rem auto;
+}
+.foot-middle > p {
+  margin: 1rem auto 2rem auto;
+}
+.foot-middle > p {
+  margin: 1rem auto;
+}
+.foot-right > p {
+  margin: 1rem auto;
+}
+.row {
+  text-align: center;
+}
+.col-sm-3 {
+  margin-top: 1rem;
+}
+@media (min-width: 768px) {
+  .col-sm-offset-1 {
+    margin-left: 6%;
+  }
+}
