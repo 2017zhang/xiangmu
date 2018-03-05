@@ -1,0 +1,94 @@
+body{
+    margin:0;
+    background-color:#29bde0;
+}
+header{
+    padding:10px 5%;
+    border-bottom:1px solid #74d4eb;
+}
+.header-main-l{
+    float:left;
+}
+ .header-main-r{
+     margin-top:-40px;
+    float:right;
+}
+ .header-centre{
+     text-align:center;
+     margin:0 auto;
+    color:#fff;
+    font-size:2rem;
+}
+ .main{
+     background-color:#ffedc5;
+     border:4px solid #fff;
+     width:73%;
+     height: 400px;
+     text-align:center;
+     margin-left:auto;
+     margin-right:auto;
+     margin-top:30px;
+ }
+ .main-top-center{
+     width:40px;
+     height:40px;
+     margin-top:-20px;
+     margin-left: auto;
+     margin-right: auto;
+     border-radius:50%;
+     background-color:#fff;
+     border:2px solid #ffedc5;
+ }
+.main-top-center>p{
+
+    margin-top:3px;
+    height:40px;
+    color:red;
+    font-size:1.5rem;
+}
+ .main>img{
+     width:200px;
+     padding-top:30px;
+     padding-bottom:80px;
+ }
+ #js3-main_img3{
+     width:60%;
+ }
+ button{
+     border:none;
+     display:block;
+     width:78%;
+     margin:13px auto;
+     padding-top:10px;
+     padding-bottom:10px;
+     font-size:1.4rem;
+     color:#fff;
+     text-align: center;
+     background-color:orange;
+ }
+ /*跳转页面布局*/
+#js3-img-2{
+    width:10rem;
+    margin-top: -53px;
+}
+#js3-1main_role{
+    font-size:1.5rem;
+    color:#29bde0;
+    margin-top: -82px;
+    margin-bottom: 28px;
+}
+#js3-1main_group1{
+    font-size:1.5rem;
+    color:#f56b81;
+    margin-top: -27px;
+    margin-bottom: -14px;
+}
+ .js3-1main_div{
+    border-top:1px solid #fff;
+     margin-top:23px;
+}
+ #js3-1main_prompt{
+     margin-top:15px;
+     color:orange;
+     font-size:1rem;
+ }

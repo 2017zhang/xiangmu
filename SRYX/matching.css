@@ -1,0 +1,169 @@
+body{
+    margin:0;
+    padding:0;
+    background:rgb(243, 240, 240);;
+}
+header{
+
+    padding:10px 5%;
+    background-color:#29bde0;
+}
+.header-left>img{
+    width:15px;
+
+}
+
+.min-top{
+    margin:20px 5%;
+    text-align:center;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size:2rem;
+    background:#fff;
+    box-shadow: 0 10px 10px #e6e6e6;
+}
+.personnel{
+    height:178px;
+    margin:0px 5%;
+    background:#fff;
+    box-shadow: 0 10px 10px #e6e6e6;
+}
+.personnel-01{
+    margin:7px;
+    width:45%;
+    float:left;
+    diaplay:block;
+    /*border:1px solid red;*/
+}
+.personnel-01>img{
+    float:left;
+    width:50px;
+    height:50px;
+    /*border:1px solid red;*/
+}
+.personnel-01>span{
+    margin-left:10px;
+    float:left;
+    line-height:50px;
+    /*border:1px solid red;*/
+}
+
+.personne2{
+    margin:10px 5%;
+    background:#fff;
+    box-shadow: 0 10px 10px #e6e6e6;
+}
+.import{
+    padding-top:50px;
+    text-align:center;
+    fnt-size:10px;
+}
+.import>strong{
+    font-size:15px;
+}
+.import>span{
+    color:orange;
+}
+.footer{
+    margin:5px 5%;
+    width:90%;
+    background:orange;
+    color:#fff;
+    font-size:2rem;
+    border:none;
+    border-radius:5px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+input{
+    border:none;
+    outline:none;
+    border-radius:5px;
+    background-color:#f3f3f3;
+    color:orange;
+    font-size:1.2rem;
+}
+b{
+    /*color:orange;*/
+    font-size:1rem;
+}
+.kill, .man{
+    width:15px;
+}
+.import-1{
+    width:30px;
+    margin:0 4px;
+    text-align:center;
+}
+.import-2{
+    font-size:.6rem;
+}
+
+
+/**/
+.main-foot-role-num {
+    border: 1px solid #eaeaea;
+    font-size: 25px;
+    margin: 10px;
+    padding: 10px 10px 80px 10px;
+    background-color: #ffffff;
+}
+.main-foot-role-num > input {
+    width: 50px;
+    height: 30px;
+}
+.regulator{
+    text-align: center;
+    padding-bottom:50px;
+}
+.regulator > button {
+    font-family: 'fantasy';
+    color: #fab344;
+    width: 25px;
+    top: -2px;
+    background-color: #ffffff;
+    border: 1px solid #f0f0f0;
+    padding: 2px 4px;
+}
+/*input[type=range] {*/
+    /*vertical-align: middle;*/
+    /*width: 60%;*/
+    /*display: inline-block;*/
+    /*text-align: center;*/
+/*}*/
+
+
+/*减号*/
+
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*加号*/
+
+
+input[type=range] {
+     vertical-align: middle;
+     width: 60%;
+     display: inline-block;
+     text-align: center;
+ }
+.glyphicon-plus:before {
+    content: "\002b";
+}
+.glyphicon-minus:before {
+    content: "\2212";
+}
+
+/*:after, :before {*/
+    /*-webkit-box-sizing: border-box;*/
+    /*-moz-box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
+/*}*/

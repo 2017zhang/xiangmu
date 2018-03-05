@@ -1,0 +1,139 @@
+* {
+  margin: 0 auto; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10; }
+
+.nav {
+  background-color: #29bde0;
+  height: 60px;
+  border-bottom: 1px solid #74d4ed; }
+
+.nav img {
+  position: absolute;
+  transform: scale(0.7, 0.7); }
+
+.nav-img-left {
+  left: 3%;
+  top: 10px; }
+
+.nav-img-right {
+  right: 3%;
+  top: 10px; }
+
+.nav p {
+  text-align: center;
+  padding: 23px 0;
+  font-size: 20px;
+  color: #fff; }
+
+.content {
+  float: left;
+  margin-top: 60px;
+  background-color: #29bde0;
+  padding: 0 -120px;
+  width: 100%; }
+
+.content-p {
+  margin: 0 auto;
+  padding: 15px 10%;
+  color: #ffc865;
+  font-size: 17px;
+  font-weight: bold;
+  text-indent: 38px;
+  text-align: center; }
+
+.content img {
+  padding: 10px 0;
+  max-width: 90%;
+  display: block; }
+#top-txt{
+  color:#fff;
+  text-align:center;
+  margin-top:-43.5px;
+}
+
+.content1 {
+  margin: 5px auto;
+  padding: 0 10%;
+  color: #fff;
+  font-size: 14.6px; }
+
+.content1 p {
+  padding: 0;
+  margin: 0;
+  font-size: 17px; }
+
+.content1 span {
+  margin: 0 20px 0 0; }
+
+.p-middle {
+  width: 30%;
+  margin-right: 10%; }
+
+.p-right {
+  float: right; }
+
+.role {
+  text-align: left; }
+
+.content2 {
+  /*float: left;*/
+  /*margin: 0 auto;*/
+  margin-bottom:70px;
+  font-size: 15px;
+  background-color: #fff;
+ }
+
+.content2-1 {
+  color: #b3b3b3;
+  padding: 5px 10%;
+  border-bottom: 1px solid #ccc; }
+
+.content2-span1 {
+  color: #000;
+  font-size: 17px;
+  margin: 5px 0;
+  display: inline-block; }
+
+.content2-span2 {
+  font-size: 13px;
+  float: right;
+  margin: 5px 18px; }
+
+.space {
+  height: 70px; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(153, 233, 240, 0.6); }
+
+.footer-text {
+  width: 100%;
+  padding: 15px 5%; }
+
+footer button {
+  width: 40%;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 8px;
+  outline: none; }
+
+.flooter-b1 {
+  background-color: #f66f6f;
+  margin-right: 4%; }
+
+.flooter-b2 {
+  background-color: #fbb435;
+  margin-right: 6%; }
+
+/*# sourceMappingURL=task7-3-1.css.map */

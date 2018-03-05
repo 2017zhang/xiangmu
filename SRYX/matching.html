@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,
+    minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>人数设定</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta.3/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="matching.css">
+
+</head>
+<style>
+
+</style>
+<body>
+<header>
+    <a class="header-left" href="clutch-1.html">
+        <img src="images/left.png">
+    </a>
+</header>
+<div>
+    <div class="min-top">
+        玩家配比
+    </div>
+    <div class="personnel">
+        <div class="personnel-01">
+            <img src="images/01.png">
+            <span>
+                杀手<b id="killer">2</b>人
+            </span>
+        </div>
+        <div class="personnel-01">
+            <img src="images/02.png">
+            <span>
+                平民<b id="civilian" >6</b>人
+            </span>
+        </div>
+    </div>
+    <div class="personne2">
+        <p class="import"><strong>请输入玩家数量
+            <input id="playerNum" class="import-1" type="tel" min="4" max="18" maxlength="2"  value="8"
+                   onblur="loseFous()" onchange="getValue()" onkeyup="this.value=this.value.replace(/[^\d]/g,'')">
+        </strong>
+            </strong><span class="import-2">玩家数量为4-18人</span>
+        </p>
+        <div class="regulator">
+            <button class="glyphicon glyphicon-minus" onclick="minus()"></button>
+            <input name="playform" id="playBar" value="0" min="4" max="18" oninput="change()" onchange="change()" type="range">
+            <button class="glyphicon glyphicon-plus" onclick="plus()"></button>
+        </div>
+    </div>
+
+    <!--<div class="main-foot-role-num">-->
+        <!--<span>玩家人数</span>-->
+        <!--&lt;!&ndash;<input id="playerNum" type="text" onchange="getValue()">&ndash;&gt;-->
+        <!--<span>人</span>-->
+        <!--&lt;!&ndash;<div class="regulator">&ndash;&gt;-->
+            <!--&lt;!&ndash;<button class="glyphicon glyphicon-minus" onclick="minus()"></button>&ndash;&gt;-->
+            <!--&lt;!&ndash;<input name="playform" id="playBar" value="0" min="4" max="18" oninput="change()" onchange="change()" type="range">&ndash;&gt;-->
+            <!--&lt;!&ndash;<button class="glyphicon glyphicon-plus" onclick="plus()"></button>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--</div>-->
+</div>
+<footer>
+    <button class="footer" onclick="rel()">
+        去发牌
+    </button>
+</footer>
+    <script type="text/javascript" src="matching.js"></script>
+
+
+
+</body>
