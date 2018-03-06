@@ -1,0 +1,104 @@
+
+input:focus{
+  outline:none;
+}
+input{
+  border:none;
+}
+.loginwrap{
+  height:100vh;
+  width:100vw;
+  background: url(../images/pic1.jpg)no-repeat;
+  background-size: 100% 100%;
+}
+.login{
+  width:33rem;
+  height:23rem;
+  background-color: #a6d6e0;
+  border-radius: 10px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+#logintitle{
+  text-align: center;
+  color:#a87866;
+  font-size:2.1rem;
+  margin:1rem 0;
+}
+#user{
+  font-size: 1.5rem;
+  height:3.8rem;
+  width:22rem;
+  padding:1rem 0 1rem 3rem;
+  border-radius: 5px;
+  background-color: white;
+  position: absolute;
+  top:68px;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+
+}
+.login span{
+  color:#9e9999;
+  margin-left: 2rem;
+  font-size: 11px;
+}
+#user:focus,#password:focus{
+  box-shadow: 0 0 7px 0 #af8e7c;
+}
+#user:focus~ .usericon,#password:focus~.lockicon{
+  color: #e9c7b5;;
+}
+.usericon,.lockicon{
+  position: absolute;
+  left: 55px;
+}
+.usericon{
+  top:62px;
+}
+.lockicon{
+top:110px;
+}
+#password{
+  font-size: 1.5rem;
+  height:3.8rem;
+  width:22rem;
+  padding:1rem 0 1rem 3rem;
+  border-radius: 5px;
+  background-color: white;
+  position: absolute;
+  left:50%;
+  top:116px;
+  transform: translateX(-50%) translateY(-50%);
+}
+#loginbtn{
+  display: block;
+  background-color:#eed5bf;
+  width:22rem;
+  height:4rem;
+  border-radius: 5px;
+  font-size: 1.9rem;
+  color:#a87866;
+  cursor: pointer;
+  position: absolute;
+  left:50%;
+  top:178px;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#txt{
+  height:1.5rem;
+  text-align: center;
+  line-height: 1.5rem;
+  color:#a87866;;
+  font-size: 15px;
+  position: absolute;
+  top: 140px;
+  left: 70px;
+}
+.loginalert{
+  text-align: center;
+  font-size: 15rem;
+}
