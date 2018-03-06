@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>排球智能决策支持系统</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://cdn.bootcss.com/bootstrap-table/1.11.1/bootstrap-table.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/PaperParsed.css">
+</head>
+
+
+<header>
+    <img class="img-left" src="images/logo.jpg" alt="looge" height="81" width="96">
+    <img class="img-right" src="images/右图标.jpg" alt="右图标" height="81" width="361">
+    <h1 class="headline-h">排球智能决策支持系统</h1>
+</header>
+ 
+<div class="outline-left">
+    <!--<h2>输入区域</h2>-->
+    <div class="input-box">
+        <a href="javascript:;" class="file">选择文件
+            <input type="file" accept=" application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" name="" id="file">
+        </a>
+        <p style="text-align: center;" id="fileName"></p>
+        <div id="presentation">
+            <p>展示结果</p>
+        </div>
+    </div>
+
+</div>
+<div class="outline-right">
+    <div id="headline">
+        <a class="Ranking title-bar" style="cursor:pointer">预测排名结果</a>
+        <a>|</a>
+        <a class="synthetical title-bar" style="cursor:pointer">查看综合值</a>
+        <a>|</a>
+        <a class="exponent title-bar" style="cursor:pointer">查看克托莱指数、HB、HS</a>
+        <a>|</a>
+        <a class="competitive title-bar" style="cursor:pointer">查看竞技能力(TOPSIS)</a>
+    </div>
+    <div id="createtable">
+    </div>
+
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="libs/xlsx.core.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

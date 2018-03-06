@@ -1,0 +1,155 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑";
+}
+img{
+    margin:5px 10px;
+}
+header{
+    margin-top:5px;
+    border-bottom:2px solid #7ce45c;
+}
+table{
+    display: inline-block;
+    float:left;
+    width:auto !important;
+    border:1px solid #000;
+}
+select:focus{
+    outline: none;
+    border-color:#7ce45c;
+}
+a{
+    letter-spacing:2px;
+    font-size: 20px;
+}
+th{
+    background-color:#d4d4d4;
+}
+th, td{
+    text-align:center;
+}
+#headline, #createtable{
+    margin:10px;
+}
+ #createtable{
+     white-space:nowrap;
+}
+#role{
+    margin:10px auto;
+}
+
+.img-left{
+    float:left;
+    margin-right:265px;
+}
+.img-right{
+    float:right;
+}
+.headline-h{
+    line-height: 80px;
+    text-align: center;
+}
+
+.outline-left{
+    float: left;
+    margin-top:10px;
+    margin-left:7%;
+    width:10%;
+    height:500px;
+    background-color: #dee2e61c;
+}
+@media screen and (min-width: 1150px) and (max-width: 1400px) {
+    .outline-left{
+        margin-left:-25vw;
+
+    }
+}
+@media screen and (min-width: 1400px)  {
+    .headline-h {
+        line-height: 89px;
+    }
+}
+@media screen and (max-width:960px){
+    headline-h{
+
+    }
+}
+.outline-right{
+    float:right;
+    width:75%;
+    overflow: auto;
+    margin:10px;
+    border:1px groove #dee2e6;
+}
+
+.input-box{
+    width: 117px;
+    margin-top:20%;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+.file{
+    height: 37px;
+    position: relative;
+    display: inline-block;
+    background:#0099cc;
+    border: 1px solid #99D3F5;
+    border-radius: 4px;
+    padding: 6px 12px;
+    overflow: hidden;
+    color: #fff;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+}
+
+.file>input{
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+#presentation{
+    width:115px;
+    height: 37px;
+    margin-top:40px;
+    text-align:center;
+    position: relative;
+    display: inline-block;
+    background: #d7d7d7;
+    border: 1px solid #d7d7d7;
+    border-radius: 4px;
+    padding: 6px 12px;
+    overflow: hidden;
+    color: #fff;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+}
+#presentation>p{
+    font-size: 20.6px;
+}
+
+.file:hover {
+    background: #D0EEFF;
+    color: #1E88C7;
+    text-decoration: none;
+}
+
+#u184img{
+    float: right;
+    margin-top: -10px;
+    margin-right: -10px;
+}
+#apptTilt{
+    width: 10%;
+    height: 130px;
+    padding: 2px;
+    margin-left: 10px;
+    border: 1px solid #dee2e6;
+}
