@@ -13,6 +13,7 @@ background:url(images/01.png)no-repeat;
 
     width:550px;
      height: 380px;
+     border-radius: 5px;
      text-align:center;
     background-color:#d3d8e0;
 }
@@ -21,14 +22,14 @@ background:url(images/01.png)no-repeat;
      color:#03a9f4;
  }
  .center-f{
-     width:440px;
+     width:410px;
      /*text-align:center;*/
      margin:20px auto auto auto;
      background:#fff;
 
  }
  .center-f>img{
-     margin:0 10px;
+     margin: 0 10px 0 -25px;
 
  }
  input{

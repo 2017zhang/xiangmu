@@ -11,7 +11,7 @@ header{
 .header-main-l{
     float:left;
     width:65px;
-    margin-top:30px;
+    /*margin-top:30px;*/
 }
 .header-main-r{
     float:right;

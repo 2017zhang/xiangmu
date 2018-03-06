@@ -54,9 +54,11 @@
 <script type="text/javascript">
     function run(){
         var s = document.getElementById("dd");//获取dd，并获得数字
+        console.log(s)
         if(s.innerHTML == 1){// 当dd==0的时候，跳转链接并且暂停函数
-            location.href = "/clutch.html";
-            clearInterval(run());//暂停setInterval调用的run()函数
+            console.log("开始游戏")
+            window.location.href="clutch.html";
+            return;
         }
         s.innerHTML = s.innerHTML -1;//跑一秒减一个数字
     }

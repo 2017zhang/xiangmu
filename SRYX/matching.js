@@ -6,17 +6,19 @@ function loseFous(){
     var civilian=document.getElementById("civilian");
     killer.innerhTML=0;
     civilian.innerHTML=0;
-    var txt =document.getElementById("txt").value;
+    var txt =document.getElementById("playerNum").value;
+    // var txt =document.getElementById("txt").value;
     if(parseInt(txt)<4 || parseInt(txt) >18){
         alert("输入无效，请按提示信息输入");
         return false;
     }
+    // killer.innerText=10;
     killer.innerHTML=Math.floor(txt/4);
     civilian.innerHTML=txt-killer.innerHTML;
 }
 function rel() {
     var a = [];
-    var txt =document.getElementById("txt").value;
+    var txt =document.getElementById("playerNum").value;
     var killer=Math.floor(txt/4);
     for (var i = 0; i < txt; i++) {
         a[i] = "平民"
@@ -36,7 +38,7 @@ function rel() {
         a.splice(j,1);
     }
     console.log(res);
-var txt =document.getElementById("txt").value;
+var txt =document.getElementById("playerNum").value;
     if(parseInt(txt)<4||parseInt(txt)>18){
         alert("输入无效");
     }
@@ -63,6 +65,7 @@ function getValue() {
 
 function change() {
     roleNumber.value = roleBar.value;
+    loseFous();
 }
 //加号连接range取数
 function minus() {

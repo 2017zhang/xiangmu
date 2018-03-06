@@ -57,7 +57,7 @@ header{
 }
 .triangle-right {
     float:right;
-    margin:-205px 1% 0 0;
+    margin:-195px 1% 0 0;
     width: 0;
     height: 0;
     border-top: 20px solid transparent;
@@ -66,7 +66,7 @@ header{
 }
 .triangle-left {
     float:left;
-    margin:-205px 0 0 1%;
+    margin:-195px 0 0 1%;
     width: 0;
     height: 0;
     border-top: 20px solid transparent;
@@ -86,7 +86,7 @@ header{
     background-color:#9a9a9a;
 }
 .status>a>p{
-    margin-top: -2px;
+    margin-top: 0px;
     color: #fff;
     font-size: 1px;
 }
