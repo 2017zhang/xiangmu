@@ -1,0 +1,34 @@
+
+<div id="StBd"><!--大背景-->
+<div id="StUp">
+    <img src="images/学生证边框.png" alt="">
+    <h1 id="st-h">学生卡</h1>
+    <div id="StData">
+    <div id="StPicture">
+        <div id="PictureFrame">
+            <img src="{{UserParams.img}}" alt="头像">
+        </div>
+        <p ng-click="StudentCeCk()">编辑</p>
+    </div>
+    <div id="StP">
+            <p>姓名:<span>{{UserParams.name}}</span></p>
+            <p>年级:<span>{{UserParams.gradeId|grade}}</span></p>
+            <br>
+            <p ui-sref="background">逆袭豆:<span>{{UserParams.bean}}颗</span></p>
+    </div>
+        <div id="StBelow">
+            <div id="StEnshrine" ng-click="stCt()">
+                <img src="images/学生证图标_01.png" alt="收藏">
+                <p>我的收藏</p>
+            </div>
+            <div id="StBinding" ng-click="stBg()">
+                <img src="images/学生证图标_02.png" alt="绑定">
+                <p>账号与绑定设置</p>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</div>

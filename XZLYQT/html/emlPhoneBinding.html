@@ -1,0 +1,109 @@
+
+<div id="enmPeBgBd">
+<header id="emPeTp">
+<h1 id="emPeTp-l" ng-click="heardL()">手机绑定</h1>
+<h1 id="emPeTp-r" ng-click="heardR()">邮箱绑定</h1>
+    <div class="emPeCt"></div>
+    <div class="emPeBn-l" ng-style="heardLWire"></div>
+    <div class="emPeBn-R" ng-style="heardRWire"></div>
+
+</header>
+    <!--<p id="emPeMe"><img src="images/邮箱手机绑定页_消息.png" alt="消息图标">&nbsp&nbsp绑定手机号/邮箱可获得20颗逆袭豆&nbsp&nbsp</p>-->
+
+<!--手机绑定-->
+    <div ng-style="PtPhone">
+       <div class="emPeIg_phone">
+               <p>手机:</p>
+           <input type="text" maxlength="11" placeholder="同学，请输入一个能接收验证码的手机号" ng-model="UserParams.phone"/>
+       </div>
+
+       <div class="emPeIg_PeInspection">
+           <p class="emPeIg_PeInP">验证:</p>
+           <input type="text" maxlength="6" placeholder="输入手机验证码" ng-model="UserParams.verify"/>
+           <div ng-if="send">
+           <p class="emPeIg_PeInCk"  ng-click="peVerify()" >获取验证码</p>
+           </div>
+           <div ng-if="sendTime">
+           <p class="emPeIg_PeInCk" id="sendTe">重新发送({{Countdown}})</p>
+
+       </div>
+
+        <div class="emPePromptIf" ng-if="nkPeEr">
+            <p>网络问题，请重新输入</p>
+        </div>
+        <div class="emPePromptIf" ng-if="PtPeEr">
+        <p >请输入正确格式的手机号</p>
+        </div>
+        <div class="emPePromptIf" ng-if="ptSucceed">
+            <p>验证码发送成功</p>
+        </div>
+        <div class="emPePromptIf" ng-if="ptEPeVacancy">
+            <p >请输入正确验证码</p>
+        </div>
+        <div class="emPePromptIf" ng-if="ptEr">
+            <p>验证码错误</p>
+        </div>
+        <div class="emPePromptIf" ng-if="ptPeBd">
+            <p>今日验证超过三次，请明天再试</p>
+        </div>
+        <div class="emPeIg_Bn" ng-click="peBindingBt(1)">
+            <img src="images/绑定页状态按钮.png" alt="绑定状态">
+            <p >绑定</p>
+        </div>
+    </div>
+    </div>
+
+    <!--邮箱绑定-->
+    <div ng-style="PtMail" class="none">
+        <div class="emPeIg_phone">
+            <p>邮箱:</p>
+            <input type="text" maxlength="30" placeholder="同学，请输入真实的邮箱" ng-model="UserParams.mail"/>
+        </div>
+
+        <div class="emPeIg_PeInspection">
+            <p class="emPeIg_PeInP">验证:</p>
+            <input type="text" maxlength="6" placeholder="输入邮箱验证码" ng-model="UserParams.verify"/>
+            <div ng-if="sendMl">
+            <p class="emPeIg_PeInCk" ng-click="mlVerify()">获取验证码</p>
+            </div>
+            <div ng-if="sendTimeMl">
+            <p class="emPeIg_PeInCk" id="mlsendTe">重新发送({{mlCountdown}})</p>
+        </div>
+
+        <div class="emPePromptIf"  ng-if="ptEmEr">
+        <p >请输入正确格式的邮箱号</p>
+        </div>
+
+        <div class="emPePromptIf" ng-if="navPtEmEr">
+        <p >请重新输入正确格式的邮箱号</p>
+        </div>
+
+        <div class="emPePromptIf" ng-if="ptSucceed">
+        <p >验证码发送成功</p>
+        </div>
+
+        <div class="emPePromptIf"ng-if="ptErVacancy">
+        <p >请输入验证码</p>
+        </div>
+
+        <div class="emPePromptIf" ng-if="ptEr">
+        <p >验证码错误</p>
+        </div>
+
+        <div class="emPePromptIf" ng-if="ptErBd">
+        <p >今日验证超过三次，请明天再试</p>
+        </div>
+
+        <div class="emPePromptIf" ng-if="nkEnEr">
+        <p >网络问题，请重新输入入</p>
+        </div>
+
+        </div>
+
+        <div class="emPeIg_Bn" ng-click="mlBindingBt(2)">
+            <img src="images/绑定页状态按钮.png" alt="绑定状态">
+            <p>绑定</p>
+        </div>
+    </div>
+
+</div>

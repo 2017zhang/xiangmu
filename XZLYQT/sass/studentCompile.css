@@ -1,0 +1,150 @@
+/*学生卡编辑*/
+#StBdCe{
+    position:relative;
+    width:100vw;
+    height:100vh;
+    background:#fbf3d0;
+}
+#StUpCe{
+    position: absolute;
+    /* text-align: center; */
+    /* margin: auto; */
+    margin-top:6vw;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 88vw;
+    /*border: 1px solid #000000;*/
+}
+#StUpCe>img{
+    width:88vw;
+}
+#StUpCe>h1{
+    /*width: 22vw;*/
+    /*height: 6vw;*/
+    color: #c66d08;
+    position: absolute;
+    text-align: center;
+    letter-spacing: 1vw;
+    margin: 9vw auto;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 6vw;
+    /*border: 1px solid red !* margin-top: -30vh; *!;*/
+}
+#StDataCe{    /*信息*/
+    position: absolute;
+    top: 0;
+    width: 75vw;
+    height:31vw;
+    margin-top: 24vw;
+    left: 50%;
+    transform: translateX(-50%);
+    /*border: 2px solid red;*/
+}
+
+#StPictureCe{
+    width: 27vw;
+    /* right: 0; */
+    margin-left: 5vw;
+    /* text-align: center; */
+    /*border: 2px solid red;*/
+
+}
+#StPictureCe>img{
+    width: 20vw;
+    height: 25.5vw;
+    border:1vw solid #fcba1a;
+}
+/*#StPictureCe>p{*/
+/*color:#74a9f5;*/
+/*margin: 1vh 0;*/
+/*font-size: 35px;*/
+/*}*/
+#StOverlay{ /*叠加图层*/
+    position:relative;
+    top: -25.8vw;
+    margin-top: 1.3vw;
+    margin-left:0.9vw;
+    width: 18vw;
+    height: 23.6vw;
+    background-color: rgba(0,0,0,0.3);
+}
+#StOverlay>p{
+    color: #fcd32d;
+    text-align: center;
+    font-size: 3.5vw;
+    letter-spacing: 0.5vw;
+    line-height: 23.3vw;
+}
+#StPCe{
+    /*border: 1px solid red;*/
+    width: 44vw;
+    position:relative;
+    top: -51vw;
+    right: -31.4vw;
+    /* text-align: right; */
+}
+#StPCe>p{
+    color: #fcba1a;
+    font-size: 4vw;
+    line-height:6vw;
+    /*margin:1.5vw;*/
+    letter-spacing: 0.5vw;
+    font-weight: bold;
+}
+ .grade{
+    margin-top:3vw;
+}
+#StPCe>P>span{
+    color:#5f2500;
+    /*font-size:36px;*/
+}
+#StPCe>p>input{
+    border-radius: 10px;
+    padding-top:1vw;
+    border: none;
+    outline:none;
+    text-indent:1vw;
+    width:30vw;
+    background-color:#fcd32d;
+    font-size:36px;
+    box-shadow: 0px 6px 0px 0px #d3aa34 inset;
+}
+#StCeBn{
+    width:35.7vw;
+    margin:11vw auto;
+    text-align: center;
+}
+#StCeBn>img{
+
+    width:35.5vw;
+}
+#StCeBn>p{
+    margin-top: -9.2vw;
+    font-size: 6vw;
+    text-align: center;
+    color: #fff;
+
+}
+#sex-list_dummy, #sex-list_dummy-top{
+    position: absolute;
+    margin-top: 38.6vw;
+    line-height:0;
+    right: 18vw;
+    border-radius: 1vw;
+    padding-top: 0.3vw;
+    padding-bottom: 0.6vw;
+    border: none;
+    outline: none;
+    text-indent: 1vw;
+    width: 26.5vw;
+    color: #5f2500;
+    background-color: #fcd32d;
+    font-size: 4vw;
+    box-shadow: 0px 0.5vw 0px 0px #d3aa34 inset;
+}
+#sex-list_dummy-top{
+    margin-top: 29.4vw;
+
+}

@@ -1,0 +1,40 @@
+<div class="articlehead">
+    <span class="glyphicon glyphicon-menu-left" aria-hidden="true" ui-sref="articleList"></span>
+    <span>阅览室</span>
+</div>
+<div class="articleWrap">
+    <div class="articleTitle">
+        {{article.title}}
+    </div>
+    <div class="articleUse">
+        <span>{{ article.createAt|date:'yyyy-MM-dd HH:mm:ss' }}</span>
+        <span>{{article.author}}</span>
+    </div>
+    <div class="articleContent" ng-bind-html="article.content">
+    </div>
+    <div class="articlefoot">
+        <div class="articlePraise" ng-click="clickPraise()">
+            <div class="artprimg">
+                <img src="images/like2.png" width="30" height="30" ng-if="article.praiseStatus">
+                <img src="images/like3.png" width="30" height="30" ng-if="!article.praiseStatus">
+            </div>
+            <div class="artprnum">
+                {{article.praise}}
+            </div>
+        </div>
+        <div class="articleCollect" ng-click="clickCollect()">
+            <div class="artcoimg">
+                <img src="images/collect2.png" width="30" height="30" ng-if="article.collectionStatus">
+                <img src="images/collect3.png" width="30" height="30" ng-if="!article.collectionStatus">
+            </div>
+            <div class="artconum">
+                {{article.collection}}
+            </div>
+            <div class="colStatus" ng-if="colstatus">
+                <img src="images/toolbar.png" width="92" >
+                <span class="colSuccess" ng-if="colsuccess">收藏成功</span>
+                <span class="colCancel" ng-if="!colsuccess">取消收藏</span>
+            </div>
+        </div>
+    </div>
+</div>

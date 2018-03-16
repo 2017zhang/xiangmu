@@ -1,0 +1,182 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+}
+.vlheader {
+    /*height: 8.6rem;*/
+    position: fixed;
+    top:0;
+    z-index: 2;
+    width: 100%;
+    padding: 0.5rem;
+    background: #ffe57e;
+}
+.tp{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e3a51c;
+    -webkit-text-stroke: 1px #5f2500;
+}
+.tp-lf,
+.tp-rg{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0.6rem 0;
+    text-align: center;
+}
+.tp-lf {
+    border-right: 1px solid;
+}
+.hd-rg {
+    border-left: 1px solid;
+}
+header .container {
+    /*height: 11rem;*/
+    text-align: center;
+    background: #fcd32d;
+    margin: 0;
+    width: 100%;
+}
+.tp-btn{
+    width: 80%;
+    margin: 0.7rem 0;
+    /*border-style: inset;*/
+    outline: none;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    background: #ffe57e;
+    border-color: #ffe57e;
+    color: #5f2500;
+}
+.selected {
+    background: #5f2500;
+    border-color: #5f2500;
+    color: #fff;
+}
+.mid {
+    position: relative;
+    top: 5rem;
+}
+.pic img {
+    /*min-height:30vh;*/
+    /*max-height:30vh;*/
+    width: 100vw;
+}
+.card-tp {
+    display: flex;
+    align-items: center;
+    margin: 1rem 2rem;
+}
+.card-tp img{
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+}
+.card-tp-lf {
+    padding-right:1rem;
+    flex: none;
+}
+.teachername {
+    padding-bottom: 0.5rem;
+    font-size: 1.6rem;
+}
+.summary {
+    font-size: 1.3rem;
+    color: #cbcbcb;
+}
+.card-md {
+    position: relative;
+    color: #fff;
+    margin: 1rem 2rem;
+}
+.picture{
+    width: 100%;
+}
+.icon {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+.title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    -ms-transform:translate(-50%); 	/* IE 9 */
+    -moz-transform:translate(-50%); 	/* Firefox */
+    -webkit-transform:translate(-50%); /* Safari 和 Chrome */
+    -o-transform:translate(-50%);
+    font-size: 2rem;
+    text-align: center;
+}
+.watch {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    -ms-transform:translate(-50%); 	/* IE 9 */
+    -moz-transform:translate(-50%); 	/* Firefox */
+    -webkit-transform:translate(-50%); /* Safari 和 Chrome */
+    -o-transform:translate(-50%);
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: 2px solid #fff;
+}
+.card-bt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*margin: 0.5rem 0;*/
+    margin: 1rem 2rem;
+}
+.card-bt-lf img{
+    margin-right: 1rem;
+}
+.praise {
+    margin-right: 3rem;
+}
+.card-bt-lf,
+.card-bt-rg {
+    display: flex;
+    justify-content: center;
+}
+.card-bt-rg span{
+    margin-right: 1rem;
+}
+.split {
+    height: 1rem;
+    background: #fbf3d0;
+}
+.moremsg {
+    width: 90%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.moremsg button {
+    border: 1px solid #000;
+    width: 90%;
+    background: #ee7600;
+    color: #fff;
+}
+
+.carousel-control.left {
+
+    background-image:none;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+.carousel-control.right {
+    left: auto;
+    right: 0;
+
+    background-image:none;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+.carousel-indicators {
+    z-index: 0;
+}

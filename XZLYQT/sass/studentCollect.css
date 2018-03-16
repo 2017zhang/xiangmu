@@ -1,0 +1,290 @@
+*{
+    margin:0;
+    padding:0;
+}
+#collectArticle{
+    position:relative;
+    height:100vh;
+}
+/*头部标题*/
+#ceCollectTp{
+    position:fixed;
+    top:0;
+    z-index: 2;
+    width:100vw;
+    background-color:#ffe57e;
+    height:13vw;
+}
+#ceCollectTp>h1{
+    display: inline-block;
+    /*border: 1px solid red;*/
+    width: 48.3vw;
+    margin-top: 3.2vw;
+    font-size: 5vw;
+    font-weight:900;
+    line-height: 5.7vw;
+    text-align: center;
+    color: #e6a81d;
+    -webkit-text-stroke: 0.4vw #5f2500;
+}
+#ceCollectTp-l{
+    /*border:1px solid red;*/
+    padding-top: 1vw;
+    padding-bottom: 4vw
+}
+#ceCollectTpTp-r{
+    /*border:1px solid red;*/
+    padding-top: 1vw;
+    padding-bottom: 4vw
+
+}
+.collectCt{
+    position: absolute;
+    height: 6.1vw;
+    width: .7vw;
+    border-radius: 1vw;
+    top: 3.4vw;
+    left: 49.4%;
+    background-color: #5f2500;
+}
+.collect-l, .collect-R{
+    position: absolute;
+    height: 1vw;
+    width: 27vw;
+    top: 9.3vw;
+    left: 11.5vw;
+    margin-top:1.6vw;
+    border-radius: 1vw;
+    background-color: #e3a51c;
+}
+.collect-R{
+    left:61.5vw;
+    display:none;
+}
+
+
+
+/*----------文章内容----------*/
+.artlistWrap {
+    padding: 10px;
+    font-size: 12px;
+    position: absolute;
+    top: 12vw;
+    bottom: 0;
+    overflow: auto;
+    width: 100%; }
+
+.artlistRow {
+    padding: 10px 10px 10px 0;
+    border-bottom: 1px solid #edecec;
+    position: relative; }
+
+.artlistCover {
+    position: absolute;
+    width: 75px;
+    top: 50%;
+    transform: translateY(-50%); }
+
+.artlistCover > img {
+    border-radius: 100%;
+    overflow: hidden;
+    line-height: 75px; }
+
+.artlistRight {
+    margin-left: 80px;
+    padding: 0 5px; }
+
+.artlistTitle {
+    font-size: 15px;
+    font-weight: bolder;
+    letter-spacing: 3px; }
+
+.artlistAuthor {
+    font-weight: bolder;
+    padding-top: 5px; }
+
+.artlistContent {
+    color: #b9b8b8;
+    padding: 5px 0; }
+
+.artlistLike {
+    color: #b9b8b8;
+    background: url("../images/like.png") no-repeat 0 center;
+    background-size: 46%;
+    padding-left: 19px; }
+
+.artlistCollect {
+    color: #b9b8b8;
+    background: url("../images/collect.png") no-repeat 0 center;
+    background-size: 46%;
+    padding-left: 19px; }
+
+.artlistDate {
+    float: right;
+    color: #b9b8b8; }
+
+.artlistNext {
+    background: url("../images/next.png") no-repeat;
+    background-size: 100%;
+    width: 11px;
+    height: 19px;
+    position: absolute;
+    right: 0;
+    bottom: 10px; }
+
+.loaded {
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    background-color: #e1cba4;
+    border-radius: 5px; }
+
+/*# sourceMappingURL=articleList.css.map */
+/*----------视频内容----------------------*/
+/*html {*/
+    /*font-size: 62.5%;*/
+/*}*/
+/*body {*/
+    /*margin: 0;*/
+/*}*/
+/*.vlheader {*/
+    /*!*height: 8.6rem;*!*/
+    /*position: fixed;*/
+    /*top:0;*/
+    /*z-index: 2;*/
+    /*width: 100%;*/
+    /*padding: 0.5rem;*/
+    /*background: #ffe57e;*/
+/*}*/
+.tp{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e3a51c;
+    -webkit-text-stroke: 1px #5f2500;
+}
+.tp-lf,
+.tp-rg{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0.6rem 0;
+    text-align: center;
+}
+.tp-lf {
+    border-right: 1px solid;
+}
+.hd-rg {
+    border-left: 1px solid;
+}
+
+.videoMid {
+    position: relative;
+    top: 16vw;
+}
+.pic img {
+    min-height:30vh;
+    max-height:30vh;
+}
+.card-tp {
+    display: flex;
+    align-items: center;
+    margin: 1rem 2rem;
+}
+.card-tp img{
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+}
+.card-tp-lf {
+    padding-right:1rem;
+    flex: none;
+}
+.teachername {
+    padding-bottom: 0.5rem;
+    font-size: 1.6rem;
+}
+.summary {
+    font-size: 1.3rem;
+    color: #cbcbcb;
+}
+.card-md {
+    position: relative;
+    color: #fff;
+    margin: 1rem 2rem;
+}
+.picture{
+    width: 100%;
+}
+.icon {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+.title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    -ms-transform:translate(-50%); 	/* IE 9 */
+    -moz-transform:translate(-50%); 	/* Firefox */
+    -webkit-transform:translate(-50%); /* Safari 和 Chrome */
+    -o-transform:translate(-50%);
+    font-size: 2rem;
+    text-align: center;
+}
+.watch {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    -ms-transform:translate(-50%); 	/* IE 9 */
+    -moz-transform:translate(-50%); 	/* Firefox */
+    -webkit-transform:translate(-50%); /* Safari 和 Chrome */
+    -o-transform:translate(-50%);
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: 2px solid #fff;
+}
+.card-bt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*margin: 0.5rem 0;*/
+    margin: 1rem 2rem;
+}
+.card-bt-lf img{
+    margin-right: 1rem;
+}
+.praise {
+    margin-right: 3rem;
+}
+.card-bt-lf,
+.card-bt-rg {
+    display: flex;
+    justify-content: center;
+}
+.card-bt-rg span{
+    margin-right: 1rem;
+}
+.split {
+    height: 1rem;
+    background: #fbf3d0;
+}
+.moremsg {
+    width: 90%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.moremsg button {
+    border: 1px solid #000;
+    width: 90%;
+    background: #ee7600;
+    color: #fff;
+}
+.article-load{
+    margin-top:1.6vw;
+    width:94.6%!important;
+}

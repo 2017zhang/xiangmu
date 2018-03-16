@@ -1,0 +1,25 @@
+
+<div id="signBackground" ng-click="SignBlank()">
+    <div id='calendar-outline' ng-click="SignCalender($event)">
+        <h1 id='calendar-outline-h'>当前累计签到天数<span style='color:red;'>{{SignNumber}}</span>天</h1>
+        <table>
+            <tr id='calendar-week'>
+                <th class='sunday'>周日</th>
+                <th>周一</th>
+                <th>周二</th>
+                <th>周三</th>
+                <th>周四</th>
+                <th>周五</th>
+                <th class='sunday'>周六</th>
+            </tr>
+        </table>
+        <div id="sign-box">
+            <button id="sign-bt"  ng-disabled="ClickState" ng-click="signOn($event)">
+                <span>{{SignState}}</span>
+            </button>
+        </div>
+    </div>
+
+</div>
+
+

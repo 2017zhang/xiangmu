@@ -1,0 +1,82 @@
+
+#wrapper{
+  height:100%;
+}
+
+.sign img{
+  position: fixed;
+  top:20px;
+  height:58px;
+  right:15px;
+}
+.studentcard img{
+  position: fixed;
+  top:97px;
+  height:42px;
+  right:15px;
+}
+
+.back {
+  position: relative;
+  height: 100%;
+  top:0;
+  font-size: 0;
+}
+.op {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+.dormitory {
+  position: absolute;
+  left: 6%;
+  top: 7%;
+  width: 20%;
+  height: 34%;
+  z-index: 2;
+}
+.article {
+  position: absolute;
+  left: 10%;
+  top: 55%;
+  width: 25%;
+  height: 38%;
+  z-index: 2;
+
+}
+.announcement {
+  position: absolute;
+  left: 44%;
+  top: 67%;
+  width: 11%;
+  height: 25%;
+  z-index: 2;
+
+}
+.video {
+  position: absolute;
+  left: 31%;
+  top: 7%;
+  width: 25%;
+  height: 42%;
+  z-index: 2;
+
+}
+.gym {
+  position: absolute;
+  left: 71%;
+  top: 7%;
+  width: 25%;
+  height: 36%;
+  z-index: 2;
+
+}
+.store {
+  position: absolute;
+  left: 68%;
+  top: 54%;
+  width: 21%;
+  height: 33%;
+  z-index: 2;
+
+}

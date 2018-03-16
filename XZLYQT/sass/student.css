@@ -1,0 +1,120 @@
+body{
+    margin:0;
+}
+#StBd{
+    position:relative;
+    width:100vw;
+    height:100vh;
+    background:#fbf3d0;
+}
+#StUp{
+    position: absolute;
+    margin-top:6vw;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 88vw;
+}
+#StUp>img{
+    width:88vw;
+}
+#StUp>h1{
+    width: 29vw;
+    height: 6vw;
+    font-size:6vw;
+    color: #c66d08;
+    position: absolute;
+    text-align: center;
+    letter-spacing: 1vw;
+    margin: 9vw auto;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+#StData{    /*用户信息*/
+    position: absolute;
+    top: 0;
+    width: 75vw;
+    margin-top: 21vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#StPicture{
+    margin-top:30vw;
+    width: 20vw;
+    margin-left: 5vw;
+}
+#PictureFrame>img{
+    position: absolute;
+    width: 18.1vw;
+    height: 23.6vw;;
+}
+#PictureFrame{
+    position:absolute;
+    width: 20vw;
+    height: 25.5vw;
+    margin-top:-26.5vw;
+    border:1vw solid #fcba1a;
+}
+#StPicture>p{
+    width:11vw;
+    color:#74a9f5;
+    margin: 1vw 0;
+    font-size: 3vw;
+}
+#StP{
+    position: relative;
+    width: 44vw;
+    top: -32.7vw;
+    right: -31.5vw;
+}
+#StP>p{
+    color: #fcba1a;
+    line-height:6vw;
+    font-size: 4vw;
+    margin: 0.5vh;
+    letter-spacing:0.5vw;
+    font-weight: bold;
+}
+#StP>p>span{
+    color:#5f2500;
+}
+/*下部分*/
+#StBelow{
+    position: absolute;
+    left: 50%;
+    margin-top: -12vw;
+    transform: translateX(-50%);
+    width:88vw;
+}
+#StEnshrine, #StBinding{
+    background-color:#fcd32d;
+    border-radius:1.5vw;
+    box-shadow: 0px .5vw 0px 0px #d3aa34 inset;
+}
+#StEnshrine>img, #StBinding>img{
+    /*padding: 10px;*/
+    vertical-align: middle;
+    margin: 2vw;
+    width: 10vw;
+}
+#StEnshrine>img{
+    padding:1vw;
+}
+#StEnshrine>p, #StBinding>p{
+    vertical-align: middle;
+    display:inline;
+    letter-spacing:1vw;
+    color:#5f2500;
+    font-size:5vw;
+}
+#StBinding{
+    margin-top:2vw;
+}
+#StBinding>p{
+    vertical-align: middle;
+    display:inline;
+    letter-spacing:5px;
+    color:#5f2500;
+    /*font-size:40px;*/
+}
+

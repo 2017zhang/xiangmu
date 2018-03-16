@@ -1,0 +1,187 @@
+*{
+    margin:0;
+    padding:0;
+}
+#enmPeBgBd{
+    position:relative;
+    background-color:#fbf3d0;
+    height:100vh;
+}
+#emPeTp{
+    background-color:#ffe57e;
+    height:14vw;
+}
+#emPeTp>h1{
+    display: inline-block;
+    /*border: 1px solid red;*/
+    width: 49vw;
+    margin-top: 3.2vw;
+    font-size: 5vw;
+    font-weight:900;
+    line-height: 5.7vw;
+    text-align: center;
+    color: #e6a81d;
+    -webkit-text-stroke: 0.4vw #5f2500;
+}
+#emPeTp-l{
+    /*border:1px solid red;*/
+    padding-top: 1vw;
+    padding-bottom: 4vw
+}
+#emPeTp-r{
+    /*border:1px solid red;*/
+    padding-top: 1vw;
+    padding-bottom: 4vw
+
+}
+.emPeCt{
+    position: absolute;
+    height: 6.1vw;
+    width: 1vw;
+    border-radius: 1vw;
+    top: 3.4vw;
+    left: 49.4%;
+    background-color: #5f2500;
+}
+.emPeBn-l, .emPeBn-R{
+    position: absolute;
+    height: 1vw;
+    width: 27vw;
+    top: 9.3vw;
+    left: 11.5vw;
+    margin-top:1.6vw;
+    border-radius: 1vw;
+    background-color: #e3a51c;
+}
+ .emPeBn-R{
+     left:61.5vw;
+     display:none;
+ }
+/*消息*/
+#emPeMe{
+    margin-top:10.8vw;
+    padding-right:7.3vw;
+    font-weight:700;
+    font-size:3vw;
+    letter-spacing:0.2vw;
+    text-align:center;
+    color:#8d613e;
+}
+#emPeMe>img{
+    width:7.3vw;
+    height:5vw;
+    vertical-align:middle;
+}
+/*输入栏*/
+.emPeIg_phone, .emPeIg_PeInspection{
+    margin-top: 10.3vw;
+    text-align:center;
+}
+.emPeIg_phone>p, .emPeIg_PeInP{
+    font-size: 5.2vw;
+    line-height: 6vw;
+    padding-bottom:0.3vw;
+    letter-spacing:1vw;
+    color:#fcba1d;
+    display:inline-block;
+    margin:0;
+}
+.emPeIg_phone>input, .emPeIg_PeInspection>input{
+    width: 67.5vw;
+    /*width: 73.5vw;*/
+    height: 7vw;
+    font-size: 3.5vw;
+    text-indent: 1vw;
+    font-weight: bold;
+    vertical-align: bottom;
+    color: #bca86a;
+    border: none;
+    border-radius: 0.5vw;
+    background-color: #fcba1d;
+    box-shadow: 0px 0.5vw 0px 0px #d3aa34 inset;
+}
+@media screen and (max-width:330px){
+    .emPeIg_phone>input, .emPeIg_PeInspection>input{
+        width: 69vw;
+    }
+}
+/*验证*/
+.emPeIg_PeInspection{
+    margin-top:4.9vw;
+}
+
+.emPeIg_PeInCk{
+    display: table;
+    line-height: 7vw;
+    margin-top: -6.9vw;
+    font-weight: 600;
+    margin-left: 72vw;
+    /* border: 1px solid red; */
+    color: #fff;
+    font-size: 3.6vw;
+}
+#sendTe ,#mlsendTe{
+    width: 22vw;
+    font-weight: 100;
+    margin-left: 69vw;
+}
+/*按钮*/
+.emPeIg_Bn{
+    position: absolute;
+    width: 35.4vw;
+    height: 10vw;
+    margin: auto;
+    /*bottom: 0;*/
+    top: 80vw;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.emPeIg_Bn>img{
+    width:35vw;
+    height:9.5vw;
+}
+.emPeIg_Bn>p{
+    margin-top:-9.4vw;
+    font-size:7vw;
+    letter-spacing:1vw;
+    color: #ffffff;
+}
+/*提示信息*/
+.emPePrompt{
+    margin-top: 6vw;
+    width: 100vw;
+    height: 9.3vw;
+    border-radius: 1vw;
+    background-color: #ccc;
+    text-align: center;
+}
+.emPePromptIf{
+    margin-top: 6vw;
+    width: 100vw;
+    height: 9.3vw;
+    border-radius: 1vw;
+    background-color: #ccc;
+    text-align: center;
+}
+.emPePromptIf>p{
+    font-size: 3.6vw;
+    font-weight: 600;
+    letter-spacing:.5vw;
+    line-height: 9.5vw;
+    color: #fff;
+}
+.emPePrompt>p{
+    font-size: 3.6vw;
+    font-weight: 600;
+    letter-spacing:.5vw;
+    line-height: 9.5vw;
+    color: #fff;
+}
+/*隐藏*/
+.emPePrompt{
+    display:none;
+}
+.none{
+    display:none;
+}

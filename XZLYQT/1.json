@@ -1,0 +1,33 @@
+{
+  "cardList":
+    [
+      {"id":"1",
+      "title":"啦啦啦",
+      "teacherName":"牛顿",
+      "teacherImg":"images/head.png",
+      "summary":"会告诉家告诉大家旦反抗就会告诉大家旦反抗就会告诉大家旦反抗就会告诉大家发表啥",
+      "picture":"images/back.png",
+      "praise":"21",
+      "collection":"24",
+      "creatAt":"2017-11-9"
+      },
+
+      {"id":"2",
+        "title":"啦啦现",
+        "teacherName":"牛顿",
+        "teacherImg":"images/head.png",
+        "summary":"会告诉家告诉大家旦反抗就会告诉大家旦反抗就会告家旦反抗就会告诉大家发表啥",
+        "picture":"images/back.png",
+        "praise":"21",
+        "collection":"24",
+        "creatAt":"2017-11-9"
+      }
+
+
+
+
+
+    ]
+
+
+}

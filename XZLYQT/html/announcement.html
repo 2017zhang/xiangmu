@@ -1,0 +1,14 @@
+<div class="announceWrapper">
+    <div class="announceTitle">最新公告</div>
+    <div class="announceInner">
+        <div class="announceContent" >
+            <div ng-if="!anshow" ng-repeat="x in announcement">
+                <div  style="text-align: left">{{$index+1}}、 {{x.title}}</div>
+                <div  style="text-indent: 36px">{{x.content}}</div>
+            </div>
+            <div ng-if="anshow">{{announcementinner}}</div>
+        </div>
+        <button type="button" ng-click="announceClose( )">关闭</button>
+    </div>
+</div>
+<div class="announceCover" ng-click="announceClose( )" ></div>

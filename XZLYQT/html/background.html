@@ -1,0 +1,23 @@
+
+    <div id="wrapper" >
+        <div class="back">
+            <img src="images/background.jpg" class="op"  id="backimg">
+            <!--<div class="cover" ng-if="x" ng-click="recover()"></div>-->
+            <div class="dormitory" ui-sref="dormitory" ></div>
+            <div class="article" ui-sref="articleList"></div>
+            <div class="video" ui-sref="videoList"></div>
+            <div class="announcement" ui-sref=".announcement" ng-click="disappear()"></div>
+            <div class="gym" ui-sref="gym"></div>
+            <div class="store" ui-sref="store"></div>
+        </div>
+    </div>
+    <div ui-view ></div>
+    <a class="sign" ng-if="x" >
+        <img src="images/sign.png" ui-sref=".Sign">
+    </a>
+    <a class="studentcard" ng-if="x">
+        <img src="images/studentcard.png" ui-sref="studentCard">
+    </a>
+
+
+

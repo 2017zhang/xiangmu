@@ -1,0 +1,36 @@
+
+<div id="StUpCe">
+    <img src="images/学生证边框.png" alt="边框">
+    <h1>学生卡</h1>
+    <div id="StDataCe">
+        <div id="StPictureCe">
+            <img ng-src="{{UserParams.img}}" alt="图片">
+            <div id="StOverlay" ng-click="head()">
+                <p>换头像</p>
+            </div>
+        </div>
+        <div id="StPCe">
+            <!--最大输入限制-->
+            <p>姓名:</p>
+            <p class="grade">年级:</p>
+            <br>
+        </div>
+    </div>
+    <div id="StCeBn" ng-click="SaveChanges()">
+        <img src="images/学生卡保存按钮.png" alt="">
+        <p>保存修改</p>
+    </div>
+</div>
+<input type="text" maxlength="6"  id="sex-list_dummy-top" ng-model="UserParams.name">
+<input type="text" id="sex-list_dummy" value="{{UserParams.gradeId|grade}}" class="tmp" placeholder="" readonly="">
+
+<ul id="sex-list" style="display: none">
+    <li>未选择</li>
+    <li>初一</li>
+    <li>初二</li>
+    <li>初三</li>
+    <li>高一</li>
+    <li>高二</li>
+    <li>高三</li>
+</ul>
+

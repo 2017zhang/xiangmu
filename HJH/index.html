@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>惠家汇-限时抢购页</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/Group.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+</head>
+
+<body>
+<div class="integral-wap fixed-Width">
+    <div id="Group-head" class="clearfix">
+        <div class="swiper-container swiper-container-nav ">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide bor-2">新品</div>
+                <div class="swiper-slide">众筹</div>
+                <div class="swiper-slide">居家</div>
+                <div class="swiper-slide">特产</div>
+                <div class="swiper-slide">运动</div>
+                <div class="swiper-slide">零食</div>
+                <div class="swiper-slide">运动</div>
+                <div class="swiper-slide">零食</div>
+            </div>
+        </div>
+        <script language="javascript">
+            var mySwiper = new Swiper('.swiper-container-nav', {
+                slidesPerView: 5,
+
+            })
+        </script>
+        <!--<div class="righttubiao">-->
+        <!--<a class="bottG"></a>-->
+        <!--</div>-->
+
+    </div>
+
+    <div class="swiper-container  swiper-banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide AA">
+                <a>
+                    <img src="images/G4.png">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a>
+                    <img src="images/01.png">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a>
+                    <img src="images/imgG.png">
+                </a>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <script>
+        var swiper = new Swiper('.swiper-banner', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            autoplay: 3000,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 0
+        });
+    </script>
+
+    <div class="nav clear" id="timer" >
+        <ul id="category-head">
+            <li class="timerSBox optli"><p>00:00</p><span class="timerSpan">已经结束</span></li>
+            <li class="timerSBox"><p>02:00</p><span class="timerSpan">已经结束</span></li>
+            <li class="timerSBox"><p>04:00</p><span class="timerSpan">已经结束</span></li>
+            <li class="timerSBox"><p>06:00</p><span class="timerSpan">已经结束</span></li>
+            <li class="timerSBox"><p>08:00</p><span class="timerSpan">已经结束</span></li>
+            <li class="timerSBox"><p>10:00</p><span class="timerSpan">已经结束</span></li>
+            <li class="timerSBox"><p>12:00</p><span class="timerSpan">已经结束</span></li>
+            <li class="timerSBox"><p>14:00</p><span class="timerSpan">即将开始</span></li>
+            <li class="timerSBox"><p>16:00</p><span class="timerSpan">即将开始</span></li>
+            <li class="timerSBox"><p>18:00</p><span class="timerSpan">即将开始</span></li>
+            <li class="timerSBox"><p>18:00</p><span class="timerSpan">即将开始</span></li>
+            <li class="timerSBox"><p>20:00</p><span class="timerSpan">即将开始</span></li>
+            <li class="timerSBox"><p>22:00</p><span class="timerSpan">即将开始</span></li>
+            <li class="sjx"></li>
+        </ul>
+
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(e) {
+            $(".timerSBox").first().addClass("optli");//第一个按钮默认选中效果，也可以在下面代码上第一个按钮加calss=“content_Sty”;
+            $(".timerSpan").first().css("color","#fff");
+//            $(".timerSBox>span").css("color","#999");
+
+            $(".timerSBox").click(function(){  //点击下面的按钮触发事件;
+//this = 当前点击的哪一个按钮         //siblings意思的同级其他元素式
+                $(this).addClass("optli").siblings().removeClass("optli");
+                $(".timerSBox>span").css("color","#999");
+                $(this).find('span').css("color","#fff");
+
+                var index = $(this).index();
+                console.log(index)
+                var triangle = (-325 + ((index + 1) * 25) - 15.5 +"%");  //三角形移动位置
+                $(".sjx").css("left", triangle);
+                console.log(triangle);
+            })    //addClass添加背景样式("content_Sty") //removeClass移除背景样式("content_Sty");
+        });
+    </script>
+
+    <div class="hintbox">
+        <p>设置提醒好物不错过</p>
+    </div>
+
+
+    <div class="Group-main">
+
+        <div class="exhibition">
+        <div class="exhibition-img">
+            <a>
+                <img src="images/02.png">
+            </a>
+        </div>
+        <div class="E-content">
+            <div class="E-title">简约现代沙发床 1.5米，1.8米，联系客服课定做。</div>
+            <div class="E-txt">沙发床子母床结合</div>
+            <div class="E-price"><p>限时价<span>&nbsp¥3384.94</span></p>
+                <p class="E-original">原价<del>&nbsp¥6769.88</del></p></div>
+            <div class="E-base">
+                <p>限量33件</p>
+                <div class="E-baseBt"><p>开始提醒</p></div>
+            </div>
+        </div>
+        </div>
+        <div class="exhibition">
+            <div class="exhibition-img">
+                <a>
+                    <img src="images/02.png">
+                </a>
+            </div>
+            <div class="E-content">
+                <div class="E-title">简约现代沙发床 1.5米，1.8米，联系客服课定做。</div>
+                <div class="E-txt">沙发床子母床结合</div>
+                <div class="E-price"><p>限时价<span>&nbsp¥3384.94</span></p>
+                    <p class="E-original">原价<del>&nbsp¥6769.88</del></p></div>
+                <div class="E-base">
+                    <p>限量33件</p>
+                    <div class="E-baseBt"><p>开始提醒</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="exhibition">
+            <div class="exhibition-img">
+                <a>
+                    <img src="images/02.png">
+                </a>
+            </div>
+            <div class="E-content">
+                <div class="E-title">简约现代沙发床 1.5米，1.8米，联系客服课定做。</div>
+                <div class="E-txt">沙发床子母床结合</div>
+                <div class="E-price"><p>限时价<span>&nbsp¥3384.94</span></p>
+                    <p class="E-original">原价<del>&nbsp¥6769.88</del></p></div>
+                <div class="E-base">
+                    <p>限量33件</p>
+                    <div class="E-baseBt"><p>开始提醒</p></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".swiper-container-nav .swiper-slide").click(function () {
+                $(".swiper-container-nav .swiper-slide").removeClass("bor-2");
+                $(this).addClass("bor-2");
+
+            })
+            var onoffcont = true;
+            $(".righttubiao").click(function (e) {
+                if (onoffcont) {
+                    $(this).children("a").removeClass("bottG");
+                    $(this).children("a").addClass("topg");
+                    $(".maskG").show();
+                    // $("body").css("overflow", "hidden");
+                    onoffcont = false;
+                } else {
+                    $(this).children("a").removeClass("topg");
+                    $(this).children("a").addClass("bottG");
+                    $(".maskG").hide();
+                    // $("body").css("overflow", "auto");
+                    onoffcont = true;
+                }
+            });
+            $(".X").click(function () {
+                $(".maskG").css("display", "none");
+                $(".righttubiao a").removeClass("topg");
+                $(".righttubiao a").addClass("bottG");
+                // $("body").css("overflow", "auto");
+            })
+
+        })
+    </script>
+</div>
+</body>
+
+</html>

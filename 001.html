@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html leng="en">
+<body>
+<title>layout</title>
+<style media="screen">
+    html *{
+        padding:0;
+        margin:0;
+    }
+    .layout article div{
+        min-height:100px;
+    }
+   .left{
+        float:left;
+        width:300px;
+        background:red;
+    }
+     .right{
+        float:right;
+        width:300px;
+        background:red;}
+    .layout.float .center{
+        background:yellow;}
+</style>
+<section class="layout float">
+    <!--<style media="screen">-->
+
+    <!--/*</style>*/-->
+    <article class="left-right-center">
+        <div class="left"><h1>left</h1></div>
+        <div class="right"><h1>right</h1></div>
+        <div class="center">
+        <h1>浮动解决方案</h1>
+
+        </div>
+    </article>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+.articlehead {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  background-color: rgba(233, 206, 159, 0.78);
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 15px; }
+
+.articlehead .glyphicon-menu-left {
+  position: absolute;
+  top: 14px;
+  left: 7px; }
+
+.articleWrap {
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  top: 48px;
+  bottom: 0;
+  overflow: auto; }
+
+.articleTitle {
+  font-size: 15px;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  padding: 5px 0; }
+
+.articleUse {
+  color: #b9b8b8;
+  font-size: 10px;
+  padding-bottom: 5px; }
+
+.articleUse span {
+  margin-right: 10px; }
+
+.articleContent {
+  color: #b9b8b8;
+  padding: 10px 0; }
+
+.articleContent img {
+  max-width: 100%; }
+
+.articlefoot {
+  text-align: center; }
+
+.artprnum {
+  font-size: 23px;
+  font-weight: bold;
+  color: #fcbb1c;
+  -webkit-text-stroke: 1px #5f2500; }
+
+.artconum {
+  font-size: 23px;
+  font-weight: bold;
+  color: #fcbb1c;
+  -webkit-text-stroke: 1px #5f2500; }
+
+.articlePraise {
+  display: inline-block;
+  padding: 10px; }
+
+.articleCollect {
+  display: inline-block;
+  padding: 10px;
+  position: relative; }
+
+.colStatus {
+  position: absolute;
+  top: -33px;
+  left: -22px; }
+
+.colSuccess {
+  position: absolute;
+  top: 4px;
+  left: 16px;
+  font-size: 15px;
+  color: white; }
+
+.colCancel {
+  position: absolute;
+  top: 4px;
+  left: 16px;
+  font-size: 15px;
+  color: white; }
+
+/*# sourceMappingURL=article.css.map */

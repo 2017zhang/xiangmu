@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,cAAc;EACZ,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,wCAAuC;EACnD,eAAe,EAAC,SAAS;;AAE3B,kBAAkB;EAChB,QAAQ,EAAE,QAAQ;EAClB,IAAI,EAAE,GAAG;EACT,GAAG,EAAE,GAAG;EACR,SAAS,EAAE,qBAAoB",
+"sources": ["dormitory.scss"],
+"names": [],
+"file": "dormitory.css"
+}

@@ -1,0 +1,73 @@
+<div class="contain">
+    <header class="head">
+        <div class="teacherImg"><img ng-src="{{videoMsg.teacherImg}}"></div>
+        <div class="teacher">
+            <div class="teacher-lf">{{videoMsg.video.title}}</div>
+            <div class="teacher-bt">
+                <span>{{videoMsg.video.createAt}}</span>
+                <span>{{videoMsg.teacherName}}</span>
+            </div>
+        </div>
+    </header>
+    <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none"
+           data-setup="{}" ng-src="{{videoMsg.video.url | urlFilter}}" >
+        <!--<source src="{{url}}" type='video/mp4'/>-->
+        <!--<source ng-src="{{url}}" type='video/webm' />-->
+        <!--<source src="http://视频地址格式3.ogv" type='video/ogg' />-->
+        <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"> <!-- Tracks need an ending tag thanks to IE9 -->
+        <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"> <!-- Tracks need an ending tag thanks to IE9 -->
+    </video>
+
+    <article ng-bind-html="content">
+    </article>
+
+    <!--<div>-->
+        <!--<div class="like">-->
+            <!--<div class="like-lf">-->
+                <!--<div><img src="images/like3.png" ng-click="clickLike1()" ng-if="!like"></div>-->
+                <!--<div><img src="images/like2.png" ng-click="clickLike2()" ng-if="like"></div>-->
+                <!--<div class="st st1">{{videoMsg.video.praise}}</div>-->
+            <!--</div>-->
+
+            <!--<div class="like-rg">-->
+                <!--<div class="toolcon">-->
+                <!--<div class="toolbar ng-hide" ng-hide="success">-->
+                    <!--收藏成功-->
+                <!--</div>-->
+                <!--<div class="toolbar ng-hide" ng-hide="cancel">-->
+                    <!--取消收藏-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div><img src="images/collect3.png" style="height: 38px" ng-click="clickCol1()" ng-if="!col"></div>-->
+                <!--<div><img src="images/collect2.png" style="height: 38px" ng-click="clickCol2()" ng-if="col"></div>-->
+                <!--<div class="st st2">{{videoMsg.video.collection}}</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <div class="articlefoot">
+        <div class="articlePraise" ng-click="clickPraise()">
+            <div class="artprimg">
+                <img src="images/like2.png" width="30" height="30" ng-if="videoMsg.praiseStatus">
+                <img src="images/like3.png" width="30" height="30" ng-if="!videoMsg.praiseStatus">
+            </div>
+            <div class="artprnum">
+                {{videoMsg.video.praise}}
+            </div>
+        </div>
+        <div class="articleCollect" ng-click="clickCollect()">
+            <div class="artcoimg">
+                <img src="images/collect2.png" width="30" height="30" ng-if="videoMsg.collectStatus">
+                <img src="images/collect3.png" width="30" height="30" ng-if="!videoMsg.collectStatus">
+            </div>
+            <div class="artconum">
+                {{videoMsg.video.collection}}
+            </div>
+            <div class="colStatus" ng-if="colstatus">
+                <img src="images/toolbar.png" width="92" >
+                <span class="colSuccess" ng-if="colsuccess">收藏成功</span>
+                <span class="colCancel" ng-if="!colsuccess">取消收藏</span>
+            </div>
+        </div>
+    </div>
+</div>

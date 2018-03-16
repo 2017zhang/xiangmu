@@ -1,0 +1,70 @@
+ <header class="vlheader">
+    <div class="tp">
+        <div class="tp-lf" ng-click="showClass()">年级</div><div class="tp-rg" ng-click="showSub()">科目</div>
+    </div>
+
+    <div class="container ng-hide" ng-hide ="select1">
+        <div class="row">
+            <div class="col-xs-4" ng-repeat="x in classCons">
+                <button class="tp-btn" ng-class="{'selected':$index == temp1}" ng-click="change1($index)">{{x.name}}</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container ng-hide" ng-hide ="select2">
+        <div class="row">
+            <div class="col-xs-4" ng-repeat="x in subCons">
+                <button class="tp-btn" ng-class="{'selected':$index == temp2}" ng-click="change2($index)">{{x.name}}</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="mid">
+    <div class="pic">
+        <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+            <uib-slide ng-repeat="slide in slides track by slide.num" index="slide.num">
+                <img ng-src="{{slide.image}}" ng-click="goBanner(slide.id)" style="margin:auto;">
+                <div class="carousel-caption">
+                    <p>{{slide.text}}</p>
+                </div>
+            </uib-slide>
+        </uib-carousel>
+    </div>
+    <div class="card" ng-repeat="x in a">
+        <div class="card-tp">
+            <div class="card-tp-lf"><img ng-src={{x.teacherImg}}></div>
+            <div class="card-tp-rg">
+                <div class="teachername">{{x.teacherName}}</div>
+                <div class="summary">{{x.summary}}
+                    <a ng-show="x.more&&x.status" ng-click="show($index)">更多</a>
+                    <a ng-show="x.more&&!x.status" ng-click="hide($index)">收起</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-md" >
+            <img class="picture" ng-src={{x.picture}}>
+            <div class="title">{{x.title}}</div>
+            <div class="watch" ng-click="goVideo(x.id)">立即观看</div>
+            <img class="icon" src="images/icon.png">
+        </div>
+
+        <div class="card-bt">
+            <div class="card-bt-lf">
+                <img src="images/like.png"><span class="praise">{{x.praise}}</span>
+                <img src="images/collect.png"><span class="collection" >{{x.collection}}</span>
+            </div>
+            <div class="card-bt-rg">
+                <span>{{x.createAt}}</span><img src="images/next.png">
+            </div>
+        </div>
+        <div class="split"></div>
+    </div>
+    <div class="moremsg">
+        <button class="btn" ng-click="moreMsg()" ng-if="morem">点击获取更多信息</button>
+        <button class="btn" ng-click="moreMsg()" ng-if="!morem" disabled>已经到头啦</button>
+
+    </div>
+</div>
+

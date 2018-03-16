@@ -1,0 +1,82 @@
+<div id="collectArticle">
+    <header id="ceCollectTp">
+        <h1 id="ceCollectTp-l" ng-click="ctHeardL(2)">教学楼</h1>
+        <h1 id="ceCollectTp-r" ng-click="ctHeardR(1)">浏览室</h1>
+        <div class="collectCt"></div>
+        <div class="collect-l" ng-style="cthHeardLWire"></div>
+        <div class="collect-R" ng-style="cthHeardRWire"></div>
+    </header>
+
+    <!--------------文章内容-------------->
+    <div class="artlistWrap" ng-style="articleBody">
+        <div class="artlistRow" ng-repeat="x in a">
+            <div class="artlistCover">
+                <img ng-src={{x.img}} height="75" width="75">
+            </div>
+            <div class="artlistRight" ng-click="gotoArticle(x.id)">
+                <div class="artlistTitle">
+                    {{x.title}}
+                </div>
+                <div class="artlistAuthor">
+                    {{x.teacherName}}
+                </div>
+                <div class="artlistContent">
+                    {{x.summary}}
+                </div>
+                <div class="artlistothers">
+                    <span class="artlistLike">{{x.praise}}</span>
+                    <span class="artlistCollect">{{x.collection}}</span>
+                    <span class="artlistDate">{{x.createAt}}</span>
+                </div>
+            </div>
+            <div class="artlistNext"></div>
+        </div>
+        <div class="moremsg">
+            <button style="color:#fff;"class="btn article-load" ng-click="loaded()">{{loadtext}}</button>
+        </div>
+        <!--<div class="loaded" ng-click="loaded()">{{loadtext}}</div>-->
+    </div>
+
+    <!------影视列表----------->
+    <div class="videoMid" ng-style="videoBody">
+
+        <div class="card" ng-repeat="x in a">
+            <div class="card-tp">
+                <div class="card-tp-lf"><img ng-src={{x.teacherImg}}></div>
+                <div class="card-tp-rg">
+                    <div class="teachername">{{x.teacherName}}</div>
+                    <div class="summary">{{x.summary}}
+                        <a ng-show="x.more&&x.status" ng-click="show($index)">更多</a>
+                        <a ng-show="x.more&&!x.status" ng-click="hide($index)">收起</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-md" >
+                <img class="picture" ng-src={{x.picture}}>
+                <div class="title">{{x.title}}</div>
+                <div class="watch" ng-click="goVideo(x.id)">立即观看</div>
+                <img class="icon" src="images/icon.png">
+            </div>
+
+            <div class="card-bt">
+                <div class="card-bt-lf">
+                    <img src="images/like.png"><span class="praise">{{x.praise}}</span>
+                    <img src="images/collect.png"><span class="collection" >{{x.collection}}</span>
+                </div>
+                <div class="card-bt-rg">
+                    <span>{{x.createAt}}</span><img src="images/next.png">
+                </div>
+            </div>
+            <div class="split"></div>
+        </div>
+        <div class="moremsg">
+            <button class="btn" ng-click="moreMsg()" ng-if="morem">点击加载更多</button>
+            <button class="btn" ng-click="moreMsg()" ng-if="!morem">已经到头了，点击也出不来！</button>
+        </div>
+    </div>
+
+
+
+
+</div>
